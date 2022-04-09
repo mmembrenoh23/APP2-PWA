@@ -1,16 +1,12 @@
 {
-  "short_name": "Calculadora",
-  "name": "Calculadora React - PWA",
-  "start_url": ".",
+  "name": "<Application Name>",
+  "short_name": "<Application Short Name>",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#FFD36E",
+  "scope": "./",
+  "start_url": "./",
   "icons": [
-     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
     {
       "src": "assets/icons/icon-72x72.png",
       "sizes": "72x72",

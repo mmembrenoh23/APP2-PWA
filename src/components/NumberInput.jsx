@@ -19,15 +19,20 @@ const NumberInput = (props) => {
     }
   return  (
       <Fragment>
-          <label>
-              {name} : <input value={parseInt(numeros)} onChange={ handleChange } type="number" />
+          <label className='col-2'>
+              {name} : 
           </label>
+          <div className='col-4'>
+            <input value={parseInt(numeros)} onChange={ handleChange } type="number" className='form-control' />
+          </div>
       </Fragment>
   );
 }
 
 NumberInput.propTypes = {
     name: PropTypes.string,
+    setNumber1: PropTypes.func,
+    setNumber2: PropTypes.func
 };
 
 export default NumberInput;

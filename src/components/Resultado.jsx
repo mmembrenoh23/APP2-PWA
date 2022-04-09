@@ -17,6 +17,14 @@ const Resultado = (props) => {
         break;
     case operacion === "Division":
         resultado = input1 / input2;
+
+        if(resultado === Infinity){
+          resultado=0;
+        } else if (resultado === -Infinity){
+          resultado=0;
+        } else if(isNaN(resultado)){
+          resultado=0;
+        }        
         break; 
     default: resultado  = 0; break;
   }
