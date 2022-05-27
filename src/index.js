@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import ReloadPrompt from './ReloadPrompt'
 
 ReactDOM.render(
   <React.StrictMode>
+    <ReloadPrompt />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
